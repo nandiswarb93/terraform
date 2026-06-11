@@ -2,16 +2,21 @@
 .terraform/
 .terraform.lock.hcl
 *.tfstate
-*.tfstate.*backup
+*.tfstate.backup
 *.tfplan
-.tfvars
-.tfvars.json
 crash.log
+
+# Terraform variable files
+*.tfvars
+*.tfvars.json
 
 # Local overrides
 override.tf
 override.tf.json
 
-# Provider specific files (if any)
-# For example, if you're using AWS, you might have:
-# .aws/credentials
+# OS / Editor
+*.exe
+*.log
+.DS_Store
+.vscode/
+.idea/
